@@ -36,7 +36,9 @@
 ::                                                                                  ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-@echo off
+@echo off & echo [?25l
+title   
+mode 25, 3
 cls
 
 ::Haha, CPU usage go brrrr
@@ -78,9 +80,11 @@ set second=0%second%
 set second=%second:~-2%
 
 ::Clears the screen and then shows you the regret
-cls
-echo %hour%:%minute%:%second%
+echo [1;1f
+echo         %hour%:%minute%:%second%
 
+
+sleep.exe 50 ms
 ::Repeat the suffering all over again (forever)
 goto loopBeginning
 
