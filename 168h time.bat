@@ -24,7 +24,7 @@
 ::  furnished to do so, subject to the following conditions:                        ::
 ::                                                                                  ::
 ::  The above copyright notice and this permission notice shall be included in all  ::
-::  copies or substantial portions of the Software.                                 ::  
+::  copies or substantial portions of the Software.                                 ::
 ::                                                                                  ::
 ::  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR      ::
 ::  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,        ::
@@ -61,7 +61,7 @@ set second=%time:~6,2%
 ::Adds the amount of hours from the previous day to the current day
 set /a hour=hour+timeDifference
 
-::Removes the zeros from the minute and seconds. Even they will be added later. Because it can.
+::Removes the zeros from the minute and seconds. Even though they will be added later. Because it can.
 set /a minute=minute
 set /a second=second
 
